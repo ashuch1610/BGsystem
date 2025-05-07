@@ -1,6 +1,13 @@
-import React from 'react'
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+
 
 const Trainingservices = () => {
+  const navigate = useNavigate();
+
+  const handleRedirect = () => {
+    navigate('/registration-form'); // Redirects to the training-services page
+  };
   return (
     < div className='bg-white'>
       <div class="container text-center pt-3">
@@ -27,7 +34,7 @@ const Trainingservices = () => {
                 <h1 className='text-left ' style={{ color:'#FF7F7F' }}>Master the tools of Modern Design</h1>
                 <h1 className='text-left'>SOLIDWORKS & AUTOCAD</h1>
                 <h4 className='text-left'>Design.Draft.Dominate</h4>
-                <button style={{backgroundColor: '#ffcccc', borderRadius: '15px',padding: '10px 20px'}}>Register Now</button>
+                <button   onClick={handleRedirect} style={{backgroundColor: '#ffcccc', borderRadius: '15px',padding: '10px 20px'}}>Register Now</button>
         
 
            

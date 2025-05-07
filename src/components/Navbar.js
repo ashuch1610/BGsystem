@@ -77,7 +77,7 @@ const Navbar = () => {
                     </div>
                     <div className='nav-item p-1'>
                       <Link to="/trainging-services" className="text-white link-underline link-underline-opacity-0 inline-block mt-2">
-                        Traing Services
+                     AUTO-CAD Course
                       </Link>
                     </div>
                   </div>
